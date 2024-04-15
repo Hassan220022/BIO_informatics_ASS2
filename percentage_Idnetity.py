@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-from Bio.Align.PairwiseAligner import pairwise2
+from BioPython import pairwise2
 from itertools import combinations
 import re
 
