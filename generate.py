@@ -1,7 +1,5 @@
 #!/usr/bin/python3
 import random
-from reportlab.lib.pagesizes import letter
-from reportlab.pdfgen import canvas
 
 def mutate_protein(sequence, num_mutations):
     protein_letters = 'ACDEFGHIKLMNPQRSTVWY'
@@ -23,15 +21,10 @@ sequence = 'MKTAYIAKQRQISFVKSHFSRQLEERLGLIEVQAPILSRVGDGTQDNLSGAEKAVQVKVKAL'
 num_mutations = 20
 mutated_sequences = mutate_protein(sequence, num_mutations)
 
-# Create a PDF file and draw the mutated sequences on it
-pdf_file = "mutated_sequences.pdf"
-c = canvas.Canvas(pdf_file, pagesize=letter)
-c.setFont("Helvetica", 12)
+# Save mutated sequences to a text file
+txt_file = "mutated_sequences.txt"
+with open(txt_file, "w") as f:
+    for i, seq in enumerate(mutated_sequences, 1):
+        f.write(f"{i}. {seq}\n")
 
-for i, seq in enumerate(mutated_sequences, 1):
-    c.drawString(100, 800 - i * 20, f"{i}. {seq}")
-
-c.save()
-
-print(f"Mutated sequences saved to {pdf_file}")
-
+print(f"Mutated sequences saved to {txt_file}")
