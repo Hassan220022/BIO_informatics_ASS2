@@ -1,0 +1,6 @@
+muscle 5.2.osxarm64 [-] built Apr 15 2024 21:07:11
+Started Tue Apr 16 01:12:32 2024
+muscle -align subset.fasta -output aligned.afa -log debug.log 
+Input: 49 seqs, avg length 527, max 538
+
+Random number seed 1
