@@ -1,0 +1,41 @@
+;   MEGA 11 (Molecular Evolutionary Genetics Analysis)
+;
+;   Suggested Citation for MEGA 11:
+;
+;   Tamura K, Stecher G, and Kumar S.
+;   MEGA11: Molecular Evolutionary Genetics Analysis version 11.
+;   Molecular Biology and Evolution (2021) 38:3022-3027
+
+[Application Info]
+
+	Version                                 = 11.0.13
+	Build                                   = 11220621-x86_64
+	User Interface                          = Graphical
+	Operating System                        = mac
+
+[General Info]
+
+	Data Type                               = amino acid
+	No. of Taxa                             =       68
+	No. of Sites                            =       44
+	Data File                               = 
+
+[Analysis Settings]
+
+	Scope                                   = All Selected Taxa
+	Statistical Method                      = UPGMA
+	Test of Phylogeny                       = Bootstrap method
+	No. of Bootstrap Replications           = 1000
+	Substitutions Type                      = Amino acid
+	Rates among Sites                       = Uniform Rates
+	Pattern among Lineages                  = Same (Homogeneous)
+	Gaps/Missing Data Treatment             = Complete deletion
+	Number of Threads                       = 14
+
+[Analysis Statistics]
+
+	Start Time                              = 20-4-24 22:07:34
+	End Time                                = 20-4-24 22:46:45
+	Execution Time                          = 2351.145 (seconds)
+	Peak Memory Used(Working Set)           =  Not Available
+	Sum of branch lengths                   =  128.318
